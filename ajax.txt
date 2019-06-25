@@ -1,0 +1,57 @@
+				AJAX
+
+https://api.jquery.com/jQuery.Ajax/#jQuery-ajax-url-settings
+
+//ajout la partie de code
+
+$("#majPremier").click(function(){
+	$("#premier").load('update.html', function(){
+		alert('mise à jour ok');
+	})
+})
+
+$("#maj2").on("click", function() {
+
+	$.ajax({
+		method: "POST",
+		url: "img2.html"
+	})
+	.done(function(data) {
+		$("#deuxieme").html(data);
+	})
+	.fail(function(jqXHR, textStatus){
+		console.log("Request failed: " + textstatus);
+	});
+});
+
+///////////////////////////////////////////////////////////////
+$.get("http://api.openweathermap.org/data/2.5/weather?q="+city+"&APPID=6fdaba1fd48fc11ee4de6cb7d3ded05f&units=metric", callbackGetSuccess)
+		.done(function() {
+			//alert("youpi ça marche");
+		})
+		.fail(function() {
+			alert("zut il y a un problème");
+		})
+		.always(function() {
+			//alert("c'est terminé");
+		});
+
+	})
+
+	let callbackGetSuccess = function(data) {
+		
+////////////////////////////////////////////////////////////////
+				BOUCLE FOR
+$("#majPremier").on("click", function() {
+		$.ajax({
+			method: "POST",
+			url: "index.json",
+			dataType: "json"
+		})
+		.done(function(data){
+			for(let i = 0; i<data.length; i++) {
+				$("#premier").append(data[i].name+" "+data[i].email);
+			}
+		})
+		.fail("Request failed : "+ status);
+	});

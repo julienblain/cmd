@@ -1,0 +1,55 @@
+				GIT
+
+git config --global (ou pas)
+git config user.name "juju"
+git config user.email "blabla@"
+git config --list		//permet de voir si la config c'est bien passé
+
+git init
+git status
+git add fichier.html fichier.css
+git add .
+
+git rm --cached fichier.css   	//supp indexation
+git reset fichier.css       	// pareil supp indexation
+git reset              	   	//desindex tout
+
+git commit -m "truc added"
+
+git diff			//permet de voir les modif sur les files
+git show +sha1			//show modif du commit
+
+git log				//historique des commit 
+git log -n 8			//montre les 8 derniers commit
+
+git checkout + sha1		//circule entre les commit
+git checkout master
+
+git tag				//liste des tag
+git tag name1			// tag create
+git tag --delete namegit1	//delete tag name
+
+git remote add origin https://github.com... 	//cree le remote git vers githube
+git remote -v 			// verif remote
+git push -u origin master	// 1er push d'origin à master
+
+git pull			//tire du github au local
+
+git branch 13062019Form		//create new bgitranch
+git branch 			//list les branches
+git checkout nouvelleBranche	//bouge de branche
+git push --set-upstream origin nouvelleBranche  //permet remote to github (dit en console)
+git checkout -b branchName	//cree branch et se deplace dessus
+
+git branch -d branchNale	//delete branch
+git branch -a			//donne branch distant
+git push origin --delete branchName	//delete branch depot distant
+
+git rebase branchName			//bouge tout les commit d'une branche à une autre de la branche qu'on veut les commit vers celle qu'on veut mettre les commit
+git merge branchNameAFusionner		//fusionne la branche qu'on veut garder, de la branche qu'on veut garder
+
+git stash			//mets les modif de coté, go to other branch and save les changements sans besoin de commit
+git stash +indexDuStash		//reedite les stash indexés 0
+git stash list			//list index stash
+
+git revert +sha1		//fait l'inverse des modif du dernier commit

@@ -1,0 +1,230 @@
+				JQUERY
+
+https://api.jquery.com/  				//documentaiton method
+
+$(function() {});					//start code
+
+.html('truc');						//write into select tag
+.dblclick()
+.css({'color' : 'blue', 'font-style' : 'italic'});
+
+$('ul').css({'font-style' : 'italic'}).click(function() { //chainage
+	alert('first');
+});
+
+.css('background')					//getter
+.css('background-color','red')				//setter
+
+.after("<p>after</p>");					//ajout apres
+.before()						// avant
+
+$(".second").click(function() {				//animate
+	$(this).animate({
+		opacity : 0
+	}, 1000, function() {
+		$(this).after("complet");
+	});
+});
+$(".first").fadeOut('slow', function() {		//function call-back
+	$(this).fadeIn('slow');
+});
+
+
+.children()						//getter children
+
+.appendTo						//ajouter à 
+.clone().appendTo("#d")					//clone et ajoute à
+.empty()						//delete text
+.detach()						//remove tag but conserve les data
+.remove()						//remove tag and data
+
+slideUp(300).delay(3000).fadeIn(400);			//delay
+
+$("truc>div").eq(-1).html("sdfqsfq");			//selctionne la dernière div
+$("truc>div").eq(2).html("sdfqsfq");			selectionne la 3e div (array)
+:eq(2)
+
+
+input:button						seulement sur input
+input:checkbox
+:first
+:first-child
+$("p:contains('paraAfter')")				selec p qui contient le text paraAfter
+:empty							select all element non children
+
+:enable / :desenable
+:eq()
+:even							les memes paire impaire
+
+.hover()
+.insertAfter()
+.insertBefore
+
+.now()
+.time()
+.length
+.not()
+.remove()
+.replaceAll()
+				FORMULAIRE
+
+
+$("#inputPassword4").focus(function() {			//focus and blur input
+	$(this).css("background","yellow");
+});
+$("#inputPassword4").blur(function() {
+	$(this).css("background","white");
+
+$("#form").submit(function() {			//pop lors submit form
+		alert("boom");
+	});
+});
+
+.change()
+:focus
+.focusout()
+
+
+			EVENT 
+
+$( "a" ).click(function( event ) {
+  alert( event.isDefaultPrevented() ); // false
+  event.preventDefault();
+  alert( event.isDefaultPrevented() ); // true
+});
+
+PRIVILEGIER .on('keypress', function(){})
+.keypress()
+.keydown()
+.keyup()
+.mousedown()
+.mouseenter()			//entre dans l'element
+.mouseleave()
+.mousemove()
+.mouseout()
+.mouseover()	
+.mouseup		
+
+.load()
+
+			DIMENSION
+.height()			//slt contenu sans paddign
+.innerHeight ()			//with padding
+.outerHeight(true)		//with padding, border ant optionnaly margin
+.innerWidth() /.width() / outerWidth
+
+.position()
+
+			POSITION
+$( document ).on( "mousemove", function( event ) {
+  $( "#bloc" ).text( "pageX: " + event.pageX + ", pageY: " + event.pageY );
+});
+
+.offset({top:0, left:0});		//replace l'element à xy ou getter xy
+.offsetParent()
+
+
+			INSERER
+.text()
+
+			ANIM
+
+.anim			//version non min
+.fadIn()  // .fadeOut()	//version non min
+.finish()
+.off()			remove an event handler
+.on()
+.one			//comme on mais en une fois
+
+.resize()
+.toggle()
+.stop()
+
+.queue			//voir en bas le code
+
+			
+			SELECTIONNER
+.attr()
+.find()	
+.first()
+:first
+:first-child
+:first-of-type	
+.has()
+.hasClass()
+.hide()
+.last()
+.last-child()
+.last-of-type()
+.not()
+.parent()
+.parents()
+
+.prepend()				//selectionne tout les element enfants
+.prependTo()
+.prev()
+.prevAll()
+.prevUntil()
+.select()
+.slice(start, end)
+.val()					//tranche d'element selectione par index
+
+
+:height
+:hidden
+:image	
+:input
+:last
+:last-child
+:not
+:parent
+:password
+:selected
+:text
+:visible
+
+			AJAX
+
+			WINDOWS
+$(window).resize(function(){//})	//action when resize window
+.scroll()
+.scrollTop(0)				//fixe la fenetre du nav à la valeur
+
+			CODE
+
+$( "#bloc" ).click(function() {
+		$( "#p" )
+				.animate({
+						opacity: 0.25
+					}, 1000, function() {
+						console.log('ok')
+				}).animate({
+						padding: 50 
+					}, 1000, function(){
+						console.log('b')	
+				})
+				.queue(function() {
+					//dequeue permet que l'autre anmi s'execute
+					$(this).toggleClass('text-light').dequeue();
+				})
+				.animate({
+					height : '+=500px'
+				});
+
+		$("#p").click(function() {
+			//efface list queue
+			$(this).clearQueue();
+		})
+
+		function attente() {
+			//recupere les infos liées à la file d'attente
+			let n = $("#p").queue('fx');
+			//affiche la taille de la queue
+			console.log(n.length);
+			//actualise cette taille
+			setTimeout(attente, 10);
+		}
+		attente();
+
+		
+	});
