@@ -1,0 +1,75 @@
+				SQL
+
+CREATE TABLE owner(id INT AUTO_INCREMENT, name VARCHAR(50), firstname VARCHAR(50), PRIMARY KEY(id))
+ALTER TABLE horse ADD FOREIGN KEY (id) REFERENCES owner(id)
+
+///////////////////////////CONVENTION
+mot_de_passe
+password est un mot reservé
+
+dans phpmyadmin mettre comme type de strockage innoDb (sinon pas de relationnel)
+///////////////////////////TYPE
+INT 
+varchar : max 535
+text
+date
+tinyint		de -128 a 127 (ou 254)
+smallint		65000
+mediumint	16millions
+bigint
+
+boolean
+
+Date
+datetime
+timestamp	de 1970
+time
+year
+
+Char		txt de 255
+tinytext, mediumtext, longtext
+
+json...
+
+
+/////////////////////////////////LANGUAGE
+list key words https://www.w3schools.com/sql/sql_ref_keywords.asp
+
+SELECT champ_name, champ_name2 FROM table_name ORDER BY 
+INSERT INTO client (prenom, nom, ) VALUES ('Nicolas', 'truc');
+SELECT * FROM `client` ORDER BY id DESC LIMIT 0,3;
+UPDATE client SET prenom="jean" WHERE id=1;
+DELETE FROM client WHERE prenom="manu";
+SELECT mot_de_passe AS code FROM clients;
+
+DISTINCT  		//select only different value
+SELECT CONCAT(prenom,' ',nom) AS pseudo FROM clients;
+SELECT * FROM `client` WHERE nom LIKE 'blain'			//recherche un pattern
+
+IS NULL			//pas egal null
+TRUNCATE different DELETE 		//data deletes different DELETE
+GROUP BY
+
+SELECT date_inscription FROM client WHERE id IN (2,1)
+
+///////////////////////////////JOINTURE
+Jointure interne
+Selection le nom de la categorie et le nom de produit, depuis la table categorie joint au produis, quand l'id catégorie = clé etranger
+SELECT categorie_produit.nom_categorie, produits.nom_produit FROM categorie_produit INNER JOIN produits ON categorie_produit.id = produits.categorie
+
+SELECT tabKeyPrimary.colonne, tabKeyPrimary.colonne2, tabKeyStrange FROM tabKeyPrimary INNER JOIN tabKeyStrange ON tabKeyPrimary.id = tabKeyStrang.categorie;
+
+LEFT JOIN
+ca sera la categorie product qui va prendre le pvr car à gauche, cad que c'est elle qui sera puissante et on aura aussi les catégories sans produits associés (égal à null)
+
+RIGHT JOIN
+Le contraire, c'est les row de la clé etrangere qui prenne le pouvoir et donc on aura tout les produits même ceux qui n'ont pas de catégorie.
+
+
+///////////////////////////////DATE
+DATE(DATETIME) récupere que la date de DateTIme
+SELECT nom, DATE(date_inscription) FROM client WHERE id=1 
+DAYNAME()...
+DATEDIFF()
+/////////////////////////////CONCATENATION
+SELECT nom, date_inscription, CONCAT(' ', DAY(date_inscription), ' ', MONTHNAME(date_inscription)) FROM client

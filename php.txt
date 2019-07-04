@@ -1,0 +1,36 @@
+			PHP
+
+$i=1;
+echo ++$i		//2
+echo $i++		//1
+
+
+foreach($voiture as $key => $value) {
+	echo $key. " ".$value;
+}
+
+for($x=0; $x<count($ville); $x++) {
+	echo $ville[$x];
+}
+
+include()
+require() //bloc si pas trouvé
+
+http://model.php?nom=chirac
+$_GET['nom']
+
+class Resto {
+	public $nom;
+
+	public function __construct($nom, $adress) {
+	}
+
+	public function setNom($nomResto) {
+		$this->nom=$nomResto
+	}
+	public function getNom(){
+		return $this->nom;
+	}
+}
+
+echo $resto->getNom();

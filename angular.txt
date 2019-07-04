@@ -1,0 +1,89 @@
+				ANGULAR
+
+ng				//commande cli angular
+ng new projet			//create project
+ng serve --open			//lance le server depuis le projet initial
+ng new mon-projet-angular --style=scss --skip-tests=true	//avec feuille de style mais sans test
+localhost:4200
+augury plugin pour chorme
+
+npm install bootstrap@3.3.7 --save //and depedencies
+
+///////////////////////modif
+dans angular.json
+	dans Dans "architect/build/options"
+		  "styles": [
+              
+			"node_modules/bootstrap/dist/css/bootstrap.css",
+              
+			"src/styles.scss"
+ ],
+
+///////////////////////////
+ng generate component mon-premier	//create component dans app
+
+
+
+/////////////////////WITH OTHER SOURCE
+https://www.ganatan.com/tutorials/demarrer-avec-angular
+
+npm install -g @angular/cli
+ng --version
+ng new angular-starter --defaults
+cd angular-starter
+ng serve -o
+
+npm run  start : Execute l'application en mode développement.
+npm run  build : Compile l'application dans le répertoire dist.
+npm run  test : Execute les tests unitaires en utilisant le framework Karma.
+npm run  lint : Execute l'analyse de code avec TSLint.
+npm run  e2e : Execute les tests end-to-end avec Protractor.
+
+npm outdated 		//on met a jours les paquets npm
+npm install apres update package.json
+
+
+//////////////////////////TEST UNITAIRE
+dans tslint.json
+	"no-use-before-declare": false, (deprecié)
+
+npm run lint 			//analyse le code
+npm run test			//tests unitaires
+npm run e2e			//tests end to end
+
+/////////////////////////COMPILATION ET MISE EN PROD
+npm run build			//complier
+
+http-server -p 8080 -c-1 dist/angular-starter	//executer
+
+http://localhost:8080/				//tester
+
+////////////////////////////AUTRES
+ng generate component modules/general/home --module=app 	//creation component
+ng g c modules/general/home --module=app
+ng generate module app-routing --flat --module=app
+
+///////////////////////////LAZY LOADING
+ng build			//ca cree dist/angular-starter/main-es5.js (avec tout notre contenu)
+Le lazy loading fonctionne en utilisant la notion de modules et non plus celle des composants
+Le principe du lazy loading va consister à scinder ce fichier en plusieurs parties qui ne seront chargées qu'en temps voulu
+
+ng generate module modules/general/contact --routing  --module=app	//creation des module
+
+
+////////////////////////////BOOTSTRAP
+npm install --save jquery
+npm install --save bootstrap
+npm install --save @fortawesome/fontawesome-free
+
+
+
+
+
+
+
+
+
+
+
+

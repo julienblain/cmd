@@ -46,10 +46,10 @@ git branch -a			//donne branch distant
 git push origin --delete branchName	//delete branch depot distant
 
 git rebase branchName			//bouge tout les commit d'une branche à une autre de la branche qu'on veut les commit vers celle qu'on veut mettre les commit
-git merge branchNameAFusionner		//fusionne la branche qu'on veut garder, de la branche qu'on veut garder
-
+git merge branchNameAFusionner		//fusionne la branche qu'on veut garder, de la branche qu'on veut garde
 git stash			//mets les modif de coté, go to other branch and save les changements sans besoin de commit
 git stash +indexDuStash		//reedite les stash indexés 0
 git stash list			//list index stash
 
 git revert +sha1		//fait l'inverse des modif du dernier commit
+
