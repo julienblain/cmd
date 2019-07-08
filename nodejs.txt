@@ -1,0 +1,54 @@
+				NODEJS
+
+nvm (utilitaire qui permet de bosse avec other version node)
+node				//ouverture REPL cad console node
+node -e console.log("test")	//evalue la commande en dehors de l'interpreteur
+ctrl+c
+
+npm init
+npm init -y			//yes aux questions
+
+//////////////////Exemple
+on cree index.js
+on colle ceci
+const http = require('http');
+const port = 3000
+ ; http.createServer((req, res) => {
+ res.writeHead(200, {'Content-Type': 'text/html'})
+ res.end('Hello World\n')
+}).listen(port); 
+
+console.log(`Server running at http://localhost:${port}/`)
+
+node index.js 			//lance le server
+///////////////////Fin ex
+
+
+				EXPRESS
+
+npm install -g express-generator	//framework
+express smoothie-be			//smoothie is my folder name
+exress smoothie-be --pug		//library pug for templates (anicen jade)
+
+npm install
+npm start				//lance le server
+
+controller du router in routes/index.js
+
+				NODEMON
+npm install nodemon			//evite de relancer tt les verif
+
+ajouter dans app.js pour creer le raccourci
+"scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+
+npm run dev				//lance server via nodemon
+
+
+
+
+
+
+

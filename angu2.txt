@@ -1,0 +1,20 @@
+			ANGU2
+https://blog.buddyweb.fr/tutoriel-cr%C3%A9er-une-application-basique-avec-angular-81eb816bbe5d
+//utilisation framework css bulma kit ui
+
+ng new angular-tutorial
+ng serve -o
+
+retirer l’encapsulation du composant principal et de faire un lien vers une nouvelle feuille de style qui importe notre kit 
+in app.component
+
+
+
+
+
+
+
+
+
+
+

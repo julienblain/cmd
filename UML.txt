@@ -1,0 +1,11 @@
+			UML(Unified Modeling languge)
+
+uml 2.5 par la pratique (livre explication )
+
+3 aspects de modelisaton: 
+	statique (classes, packags, objets, structure composite, déploiement), 
+	fonctionnel (cas d'utilisation, séquence, activité)
+	dynamique (etats, activité, séquence, communication)
+
+acteur : celui qui agit sur le systeme etudié
+

@@ -34,3 +34,31 @@ class Resto {
 }
 
 echo $resto->getNom();
+
+
+//////////////////////// Insertion boucle html 2facon
+<?php
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+?>
+
+	<tr>
+		<td><?= $row['id']?> </td>
+	</tr>
+
+
+////
+<?php 
+$stmt = $dbcon->prepare("SELECT * FROM user");
+$stmt->execute();
+
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+	extract($row);
+?>
+		<tr>
+			<td><?= $user_id ?></td>
+			<td><?= $user_firstName ?></td>
+			<td><?= $user_lastName ?></td>
+		</tr>
+<?php } ?>	
+
+	</table>
