@@ -47,8 +47,54 @@ ajouter dans app.js pour creer le raccourci
 npm run dev				//lance server via nodemon
 
 
+				MONGODB:MONGOUZ
+ouvrir la console c:\ProgramFiles\MongoDB\SErver\4.0\bien\mongo.exe
+use dbName			//va sur la db
+db.createCollection("name");	
+db.getCollection("name").insertMany([{dataJson}]);		//insert data
+db.getCollection("nam").find();					//find data in collection
+show dbs
+db								//voir dans quelle base on est
+db.collectionN.drop()
+db.dropDatabase()
+db.collectionN.find({tags: 'business'})
 
 
+npm i mongodb mongoose --save					//install mongoose
 
+				CONFIGUR APP.JS
+create config/database.js a la racine
+module.exportes = {}						//permet de rendre un objet accessible à tout le projet
 
+npm i cors --save-dev
+update app.js
+var catalogRouter = require('./api/catalog');
+const configDb = require('./config/database');
+const cors = require('cors');
+var app = express();
+// Header cross origin
+var corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
+
+// On importe la conf puis on connecte via la propriété database
+mongoose.connect(configDb.database, {
+  useNewUrlParser: true
+});
+mongoose.set('useFindAndModify', false);
+let db = mongoose.connection;
+
+// Controle de la connexion
+db.once('open', () => {
+  console.log('Connecté à MongoDB app');
+});
+
+// Controle des erreur DB
+db.on('error', (err) => {
+  console.log(err);
+});
+
+edx pour Introduction to NodeJS azat mardan
 
