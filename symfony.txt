@@ -1,4 +1,6 @@
-SYMFONY
+SYMFONY4
+liste des commandes : https://tonypayet.com/symfony-4-listing-des-lignes-de-commandes-de-base/
+
 
 composer create-project symfony/website-skeleton Name
 php bin/console server:run (vscode nop)
