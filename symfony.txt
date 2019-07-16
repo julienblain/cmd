@@ -1,0 +1,4 @@
+SYMFONY
+
+composer create-project symfony/website-skeleton Name
+php bin/console server:run (vscode nop)

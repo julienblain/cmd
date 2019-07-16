@@ -35,6 +35,7 @@ npm start				//lance le server
 
 controller du router in routes/index.js
 
+https://express-validator.github.io/docs/ //permet de valider les formualires en be
 				NODEMON
 npm install nodemon			//evite de relancer tt les verif
 
@@ -66,7 +67,7 @@ npm i mongodb mongoose --save					//install mongoose
 create config/database.js a la racine
 module.exportes = {}						//permet de rendre un objet accessible à tout le projet
 
-npm i cors --save-dev
+npm i cors --save-dev 
 update app.js
 var catalogRouter = require('./api/catalog');
 const configDb = require('./config/database');
@@ -97,4 +98,47 @@ db.on('error', (err) => {
 });
 
 edx pour Introduction to NodeJS azat mardan
+ 
+				ANGULAR
+npm i -g @angular/cli
+ng new nameProject
+ng serve
+
+module = fichier de recensement de toutes les librairy
+services = fichiers qui chargent des data externes (genre avec le backend)
+
+ng generate component name
+ng generate module name
+
+dans app.coàmponent on supprime et on met la balise router-outler
+on cree app-routing.module.ts
+
+cf git SmoothieApp
+2 way binding
+ng build --prod			//compile pour la prod et supprime les truc inutil
+
+				MATERIAL (concurrent ng-lightning)
+npm install --save @angular/material @angular/cdk @angular/animations
+
+
+				SERVICE
+ng generate service smoothie --flat		//flat pour creer le service à la racine
+Le get du composant va faire appel au service qui va renvoyer un obersvable, le service se connecte à la bdd et renvoie au composant
+On cree une interface avec les elements de nos data
+url du backend on la cree dans le service ou dans le fichier environnements
+
+
+				RXJS
+permet de mieux gerer le flux de donné, on manipule avec ses fonctions de data observables
+on souscrit à un observable, à un service (subscrize, unsubscript)
+
+Promise.all(promesse1, promesse2) et il va toute les resoudre avant de return
+concat()  		execute à la suite les observable
+concatMap()		
+map()			applique une fonction sur la valeur de l'obervable
+
+ng-dynamic-componet librairy  qui permet d'inserer des données d'autres composant dans le template, simplifie la structure
+
+
+
 
