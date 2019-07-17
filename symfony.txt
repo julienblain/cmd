@@ -4,3 +4,10 @@ liste des commandes : https://tonypayet.com/symfony-4-listing-des-lignes-de-comm
 
 composer create-project symfony/website-skeleton Name
 php bin/console server:run (vscode nop)
+
+
+composer require orm-fixtures --dev		//create fixtures folder
+php bin/console make:fixture			//create fixtures
+php bin/console doctrine:fixture:load		//envoie la fixture en bdd
+
+//Librairy Faker pour generate fake data
