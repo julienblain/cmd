@@ -1,0 +1,10 @@
+			TEST
+
+composer init
+./vendor/bin/phpunit
+..\vendor\bin\phpunit .\tests
+
+
+
+npm init
+on utilise mocha

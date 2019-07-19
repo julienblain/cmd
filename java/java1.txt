@@ -1,0 +1,76 @@
+				JAVA
+
+PLAN
+base
+application locale(sur une poste de travail)
+Persistence : Hibernate
+J2e : application web (serverlet, jsp)
+Creation web service
+Framework Spring
+
+
+Encapsulaiton : objet contient ses proprités et ses méthodes, et les methodes ont comme param les propriété (simplification plutot qu'en procedural car les methodes sont direct dans l'objet cible)
+
+Model de classe (classe abstraites) et modèle de comportement (interface = que des definitions de methodes)
+
+genericité : fabriqué des classes paramétrés dont les param sont des types de donnée
+
+Machine virtuelle : Hyper v et VMWare sont utilisés pour le cloud, VirtualMachine
+JVM : contener qui permet l'isolation de l'appel des classes, exé qui sont isolés du systeme d'exploitation, apli...
+
+C'est le bytecode qui s'execute dans la jvm, donc apres compilation. 
+Appli Multi-thread : appli qui a plusieurs fil d'execution
+
+INSTALL
+mettre le path de java
+
+Maven : gestionnaire de paquet
+
+Prendre java main class la 1ere fois
+
+Texte donnant des info au compilateur
+@Deprecated
+@Override
+@SuppressWarnings
+
+@Deprecated
+    static void m1() {
+
+				JAVADOC
+/**
+* @param args the command line arguments
+*/
+@return
+@throws
+
+alt+entrer import class
+
+une methode static est une methode qu'on peut appeler de l'exterieur sans instancier l'objet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

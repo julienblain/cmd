@@ -2,4 +2,5 @@ BASH
 
 ctrl+ l 	clear
 mkdir		creation dossier
-touch		creation fichier
+touch	/echo	creation fichier
+

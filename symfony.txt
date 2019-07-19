@@ -11,3 +11,6 @@ php bin/console make:fixture			//create fixtures
 php bin/console doctrine:fixture:load		//envoie la fixture en bdd
 
 //Librairy Faker pour generate fake data
+
+
+php bin/console make:form
