@@ -48,10 +48,51 @@ alt+entrer import class
 une methode static est une methode qu'on peut appeler de l'exterieur sans instancier l'objet.
 
 
+				TYPE DE VARIABLE PRIMITIVE
+int (sur 4 octets)
+byte (octet)
+char (caractere stocké sur 2 octets)
+short
+long (8 octets)
+float (4octets) 10^-38 a 10^38 precision relative 8 apres la virgule
+double de 10^-350 à 10^350	precision relative 12,13 apres la virgule
+
+pas de variable static dans une méthode
+
+Personne.nb 	apple d'une variable de classe
+p1.nb		appel d'une variable d'instance
 
 
+				CLASSE STRING
+utiliser StringBuffer/StringBuilder(non syncro) pour modif la string (method append pour add)
+Dès qu'on est avec des class le == n'est pas utilisable car les emplacements mémoires ne sont pas les meme
+On utilise equals
 
 
+ABSENT
+
+Github des projets : https://github.com/webformation/Formation-Java/tree/master/src/main/java/com/formation/mediatheque
+
+ArrayList	contains
+Vector
+Liste chainé
+container avec clef de hachage
+collection
+System.ArrayCopy
+les array pointent normalement vers des address, arrayCopy permet de creer un autre  emplacement
+
+
+23 JUILLET 2019
+				SYNTAXE DE BASE
+OPERATEURS
+L'associativité peut être de droite à gauche suivant les operateurs
+
+une division de 2 int donnera un resultat int (donc 0), et meme si on affecte le resultat à un flottant
+
+INCREMENTATION
+b=5
+a=b++; 		// valeur de retour post fixé a =5 et b =6;
+a = ++b;	// valeur de retour pré fixé a=6 b=6
 
 
 

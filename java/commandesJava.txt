@@ -15,3 +15,26 @@ public static String Lit() {
         Scanner sc = new Scanner(System.in);
         return sc.nextLine();
     }
+
+b = (i1 == i);				//egalité
+
+char c = 'a';				//type char et pas String
+ s1 = (short)i;				//conversion en short
+
+float pi = (float)3.14;			//converson
+float pi2 = 3.14f;			//constante
+123L					//constante longue
+
+final float pi2 = 3.14f;		//initialisation ne peut etre faite qu'une fois
+
+Integer.parseInt(txt.trim())
+Float.parseFloat
+
+.valueOf()
+toString()
+.equals()				//regarde le contenu et pas la référence mémoire
+
+
+
+
+
