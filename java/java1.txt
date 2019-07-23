@@ -89,19 +89,29 @@ L'associativité peut être de droite à gauche suivant les operateurs
 
 une division de 2 int donnera un resultat int (donc 0), et meme si on affecte le resultat à un flottant
 
-INCREMENTATION
+L'Incrementation
 b=5
 a=b++; 		// valeur de retour post fixé a =5 et b =6;
 a = ++b;	// valeur de retour pré fixé a=6 b=6
+DAns une boucle il vaut mieux ++i;
 
 
+				Les Boucles
+break permet de quitter la boucle en cours
+continue permet d'arreter à un endroit mais passe à l'itération suivante
+
+while (i++<MAX) 	//permet d'incrementer dans while
+maBoucle: while...	//une etiquette permet de break une etiquette precise
 
 
+				Les Classes
+Il est préferable d'utiliser un StringBuilder plutot que de faire une concaténation de chaine de caractere
 
+constructeur autant qu'on veut avec des param differents
+public Personne(String nom, in age)
+public Personne()
 
-
-
-
+la methode contains d'une arrayList se comporte par rapport au equals(), s'il n'est pas redéfini, ça risque de prendre en compte des objets identiques
 
 
 

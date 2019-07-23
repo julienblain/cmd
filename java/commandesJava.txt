@@ -33,8 +33,14 @@ Float.parseFloat
 .valueOf()
 toString()
 .equals()				//regarde le contenu et pas la référence mémoire
+.contains(p)				//arrayList contient, se comporte par rapport au equals
 
-
-
+@Override				//permet toString sur l'objet appelé dans une autre classe
+    public String toString() {
+        StringBuilder sb = new StringBuilder(nom);
+        sb.append(", age : ");
+        sb.append(getAge());
+        return sb.toString();
+    }
 
 
