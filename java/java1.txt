@@ -113,6 +113,54 @@ public Personne()
 
 la methode contains d'une arrayList se comporte par rapport au equals(), s'il n'est pas redéfini, ça risque de prendre en compte des objets identiques
 
+on peut surcharger des methode, cad qui n'ont pas de le meme nb de param, mais 2 param ne doivent pas etre du meme type
+
+int somme (int... v){			//permet d'avoir plusieurs param mais on sait pas cb
+
+AVOIR  List<String> l = new ArrayList<>();
+List<String> l1 = Arrays.asList("un", "deux","trois");
+
+static private int nombre; cree une varialbe de classe
+public static  int getNombre() 
+on appel la methode sur la classe
+System.out.println(Personne.getNombre());
+
+close				//destructeur de variable
+
+
+				Les Classes Internes
+Un objet de la classe interne a acces àu private de la class externe
+
+
+				Les Enumerations
+permet d'avoir un certain nombre de constante listé
+
+Civilite politesse;					//class Personne
+enum Civilite {
+        MADAME, MONSIEUR
+    }
+p = new Personne(Civilite.MADAME, "Jeanne",800);	//class externe
+
+
+				GESTION DES EXCEPTIONS
+il faut indiquer au compilateur que la methode peut lever une exception
+et reporter les exceptions sur tt les methodes
+finally permet de se premunir des return (notmment lors de l'instanciation des objets permet de faire un close)
+
+public void setAge(int age) throws Exception {
+        if(age<0) {
+            //System.out.println("Un age négatif n'existe pas");
+           // return;
+            throw new Exception("age négatif");  
+        }
+
+
+
+
+
+
+
+
 
 
 

@@ -43,4 +43,69 @@ toString()
         return sb.toString();
     }
 
+int somme (int... v){			//permet d'avoir plusieurs param mais on sait pas cb
+static private int nombre; 		//cree une varialbe de classe
+
+
+STATIC
+static private int nombre; cree une varialbe de classe
+public static  int getNombre() 
+on appel la methode sur la classe
+System.out.println(Personne.getNombre());
+
+
+close				//destructeur de variable
+
+
+Civilite politesse;					//class Personne
+enum Civilite {
+        MADAME, MONSIEUR
+    }
+p = new Personne(Civilite.MADAME, "Jeanne",800);	//class externe
+
+
+
+try {
+ 	int i = sc.nextInt();
+     }
+catch (Exception e) {
+         System.out.println(e);
+      }
+finnaly {					//permet de se premunir des return
+
+}
+
+
+public void setAge(int age) throws Exception {		//exception d'une methode
+        if(age<0) {
+            //System.out.println("Un age négatif n'existe pas");
+           // return;
+            throw new Exception("age négatif");  
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
