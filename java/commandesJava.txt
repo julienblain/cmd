@@ -83,7 +83,8 @@ public void setAge(int age) throws Exception {		//exception d'une methode
             throw new Exception("age négatif");  
         }
 
-
+super(nom, age);				//choix du constructeur parent dans la classe fille
+super.m1()					//appel de la methode parente dans la meme methode fille
 
 
 

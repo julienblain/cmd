@@ -154,10 +154,24 @@ public void setAge(int age) throws Exception {
             throw new Exception("age négatif");  
         }
 
+JEUDI 25			HERITAGE
+
+les constructeurs ne sont pas herités
+quand on ecrit le constructeur de la classe fille, on specifie quel constructeur de la classe mere on utilise
+le constructeur parent est appelé avant le constructeur fille
+ super(nom, age);
+
+de meme dans une methode on appel la methode parente
+m1() {
+	super.m1()
+}
 
 
+Une variable sans attribut ou protected, elle sera visibile au niveau du package (le protected ne s'effectue pas)
 
+final public class permet d'eviter que la class soit heritée
 
+Quand on n'instancie pas une classe parent, on cree une classe abstraite
 
 
 
