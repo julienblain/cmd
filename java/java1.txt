@@ -174,6 +174,14 @@ final public class permet d'eviter que la class soit heritée
 Quand on n'instancie pas une classe parent, on cree une classe abstraite
 
 
+VENDREDI26
+
+le buffer ne se vide pas avec un nextInt() (la touche entrée reste ne memoire donc
+int i = sc.nextInt();
+sc.nextLine()	//permet de vider le buffer
+txt=sc.nextLine();
+
+
 
 
 

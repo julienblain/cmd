@@ -1,5 +1,22 @@
 			COMANDES JAVA
 
+int tableauEntier[] = {0,1,2,3,4,5,6,7,8,9};
+int premiersNombres[][] = { {0,2,4,6,8},{1,3,5,7,9} }, i = 0, j = 0;
+new ArrayList<Media>();
+new LinkedList();			//liste chainé où chaque element est lié au précedent et au suivant par une reference
+ 
+while (i < 2)
+{
+  j = 0;
+  while(j < 5)
+  {
+    System.out.print(premiersNombres[i][j]);
+    j++;
+  }
+  System.out.println("");
+  i++;
+}
+
 System.out.println("C'est bientôt la pause");
 for (var x: args) {
             System.out.println(x);
@@ -87,7 +104,20 @@ super(nom, age);				//choix du constructeur parent dans la classe fille
 super.m1()					//appel de la methode parente dans la meme methode fille
 
 
+int i = sc.nextInt();				//vider le buffer apres un nextInt();
+sc.nextLine()	//permet de vider le buffer
+txt=sc.nextLine();
 
+String j = new String();
+j = j.valueOf(i);
+
+ for (Personne p : annuaire) { 			//interet seul qlq fille de Personnes ont l'interface Facebook donc on caste
+            if (p instanceof Facebook) {
+                System.out.println(p);
+                Facebook f = (Facebook)p;
+                f.getProfil();
+            }
+        }
 
 
 

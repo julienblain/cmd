@@ -1,4 +1,4 @@
-				JAVA
+				JAVA Openclass
 
 public class Droid {
   int batteryLevel;
@@ -22,3 +22,6 @@ char grade = 'A';			//apostrophe
 String greeting = "Hello World";	//guillements
 
 shipping.equals("Regular")		//égalité des strings
+
+
+			LA CLASSE SCANNER
