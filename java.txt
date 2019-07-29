@@ -24,4 +24,17 @@ String greeting = "Hello World";	//guillements
 shipping.equals("Regular")		//égalité des strings
 
 
-			LA CLASSE SCANNER
+Toutes les methode de class qui n'utilisent que des var de classe doivent etre declarée static
+
+Covariance des variable : un objet Ville peut contenir un objet Capital, Ville est sa superclasse
+
+Le polymorphisme permet de manipuler des variables sans connaitre leurs types
+Une méthode polymorphe a un squelette identique à la méthode de base, mais traite les choses différemment. Cette méthode se trouve dans une autre classe et donc, par extension, dans une autre instance de cette autre classe.
+
+
+
+
+
+
+
+

@@ -182,6 +182,48 @@ sc.nextLine()	//permet de vider le buffer
 txt=sc.nextLine();
 
 
+29 JUILLET
+fonction hashCode()   //permet de creer un hash (un bon candidat pour le hasCode est la clef primaire, car tres discriminate)
+tres voisin d'equals
+
+
+				APACHE TOMCAT
+permet de renvoyer des pages jsp, moteur d'application j2e
+
+user/mdp : julblain 11yoan
+
+path java : programme/java/javajdk		//pour reinstaller
+
+http://localhost:8080/
+
+Faire la connection en NetBean et server
+Dans l'onglet service, add new server, mettre la location du server là où on l'a installer
+Mtn les new projects sont des webappli
+
+une Servlet est une appli java qui tourne dans une vm sur le serveur
+
+JSP java server page, utilisation de javabeans et entrepirse java bean (ejb) qui passe les info d'une page à une autre
+
+PAQUETAGE ET CLASSE
+Pour travailler avec une servlet, on a plusieurs classe
+	GenericServlet (le protocole pas dit, pas http)
+	HttpServlet
+	Servlet (qui est une interface : javax.servlet.Servlet)
+implemente les methodes necessaires pour répondre aux requetes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
