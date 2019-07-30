@@ -122,8 +122,10 @@ j = j.valueOf(i);
 
 
 					JEE
-
-
+//Outil de debug
+ServletContext sc;
+sc = config.getServletContext();
+sc.log("message truc")  //affiche le log dans service view server log
 
 
 
