@@ -220,8 +220,16 @@ sc = config.getServletContext();
 sc.log("message truc")  //affiche le log dans service view server log
 
 
+//En prod on fourni au client
+le fichier .war (web archive et sorte de zip) qui se trouve dans le dossier target
+Ensuite aller l'importer dans le manager
 
 
+				Cookie:
+on l'utilise pour les preference de l'utilisateur
+
+				Repartition de requete
+On peut faire appel a d'autres servlet grace au requestDispatcher, et meme inclure
 
 
 

@@ -127,9 +127,11 @@ ServletContext sc;
 sc = config.getServletContext();
 sc.log("message truc")  //affiche le log dans service view server log
 
+resp.sendRedirect(sc.getContextPath() + "/index.html");		//redirection
 
 
-
+					Session
+HttpSession session = request.getSession(true);
 
 
 
