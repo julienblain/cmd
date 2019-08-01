@@ -1,5 +1,9 @@
 				JAVA
 
+Github : https://github.com/webformation/formation-j2E
+
+library jstl comme twig
+
 PLAN
 base
 application locale(sur une poste de travail)
@@ -65,7 +69,8 @@ p1.nb		appel d'une variable d'instance
 
 				CLASSE STRING
 utiliser StringBuffer/StringBuilder(non syncro) pour modif la string (method append pour add)
-Dès qu'on est avec des class le == n'est pas utilisable car les emplacements mémoires ne sont pas les meme
+Dès qu'on est avec des class le == n'est pas utilisable car les emplacements mémoires ne sont pas les meme (on utilise sur les types primitives = int, float, char et comparaison du même objet ; String est une variable référence)
+
 On utilise equals
 
 
@@ -233,12 +238,14 @@ On peut faire appel a d'autres servlet grace au requestDispatcher, et meme inclu
 
 
 
+				JSP
+la methode service est la methode generale pour repondre à une servlet, dans une http servlet on a une surcharge de service
+
+On renseigne le fichier entrer/index dans le web.xml dans l'onglet page, renseigner welcomeFile
 
 
-
-
-
-
+				Stream
+permet de creer un flux de donner sur lequel on pourra faire une recherche plus rapidement
 
 
 

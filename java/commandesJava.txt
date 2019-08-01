@@ -133,6 +133,51 @@ resp.sendRedirect(sc.getContextPath() + "/index.html");		//redirection
 					Session
 HttpSession session = request.getSession(true);
 
+					Include/Forward
+sc.getRequestDispatcher("/pied.html").include(req,resp);
+
+
+					JSP
+ Commentaires <%-- %>
+ Declaration tag <%! %>
+ Expression tag <%= %>			//ecriture, areviation outprintln()
+ Directive tag <%@ %>
+ Scriptlet tag <% %>
+
+				Avoir le Path
+<%= getServletConfig().getServletContext().getContextPath() %>
+
+				Pied 
+<%@ include file="pied.html" %>
+
+				Objet implicite dans jsp
+request 		javax.servlet.http.HttpServletRequest
+response 		javax.servlet.http.HttpServletResponse
+out 			javax.servlet.jsp.JspWriter
+session 		javax.servlet.http.HttpSession
+pageContext 		javax.servlet.jsp.PageContext
+application 		javax.servlet.http.ServletContext
+config 			javax.servlet.http.ServletConfig
+page
+
+
+				JspBean
+ <jsp:useBean id="MaRecherche" scope="session" class="Recherche" /> 
+<jsp:setProperty name="MaRecherche" property="auteur" param="auteur"		//set param auteur par recup de form
+<jsp:setProperty name="MaRecherche" property="auteur" value="truc"
+
+<jsp:getProperty name="MaRecherche" property="titre"  />
+${titre}							//getter jstl
+
+
+
+
+
+
+
+
+
+
 
 
 
