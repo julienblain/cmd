@@ -143,6 +143,8 @@ sc.getRequestDispatcher("/pied.html").include(req,resp);
  Expression tag <%= %>			//ecriture, areviation outprintln()
  Directive tag <%@ %>
  Scriptlet tag <% %>
+<sql:setDataSource
+<sql:query
 
 				Avoir le Path
 <%= getServletConfig().getServletContext().getContextPath() %>

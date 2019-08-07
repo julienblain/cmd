@@ -277,8 +277,23 @@ mysql-connector-java //via la query
 Avoir les listener
 
 
+				GLASSfICH
+instaler jdk1.8 (sinon marche pas)
+ajouter un server dans service netbeans
+run le ser qui va bug
+manage plateform
+add plateform
+ajouter le jdk1.8 qui se trouve dans programme de windows
+http://localhost:8080/
 
 
+				JPA (java persistence api)
+Java permanence api
+Trouver la persistenc : otherSource/truc/ meta-inf
+EntityManager fait la connexion entre la bdd et les entités, qu'on n'apl pas ave un new mais avec une factory createEntityManagerFactory (em = emf.)
+on fait des requetes sur les entités pas sur les bdd
+permet de passer de sql a nosql par ex...
+une Entity est une classe qui est mappée en bdd
 
 
 
