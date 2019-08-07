@@ -170,14 +170,18 @@ page
 ${titre}							//getter jstl
 
 
+				JSTL (ajout de tag supplementaire)
+
+    <groupId>jstl</groupId>				//Add to pom.xml
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
 
 
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>		//add to jsp
 
-
-
-
-
-
+				SESSION
+request.getSession().invalidate();
 
 
 

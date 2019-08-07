@@ -1,6 +1,8 @@
 				JAVA
 
 Github : https://github.com/webformation/formation-j2E
+Cours autre formateur : http://www.lsis.org/elmouelhia/teaching.html
+
 
 library jstl comme twig
 
@@ -205,7 +207,7 @@ Faire la connection en NetBean et server
 Dans l'onglet service, add new server, mettre la location du server là où on l'a installer
 Mtn les new projects sont des webappli
 
-une Servlet est une appli java qui tourne dans une vm sur le serveur
+une Servlet est une appli java qui tourne dans une vm sur le serveur, dont le but est avant tout une reponse http
 
 JSP java server page, utilisation de javabeans et entrepirse java bean (ejb) qui passe les info d'une page à une autre
 
@@ -246,6 +248,33 @@ On renseigne le fichier entrer/index dans le web.xml dans l'onglet page, renseig
 
 				Stream
 permet de creer un flux de donner sur lequel on pourra faire une recherche plus rapidement
+
+Le servletContext permet de recuperer des variables dans toute l'appli
+
+
+				JSTL
+    <groupId>jstl</groupId>				add to pom.xml
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+				SYNCHRO
+il vaut mieux utiliser le single thread pour eviter les pb dans les servlets 
+
+
+				TESTS - junit
+
+				PHPMYADMIN
+DAns ide, service, database, driver, mysql, ajouter les drivers
+
+javaDatabaseConnection
+url jdbc jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=convertToNull&serverTimezone=Europe/Paris
+permet de decrire les param de la bdd
+
+ajotuer une dependance pour que la connection se fasse
+mysql-connector-java //via la query
+
+Avoir les listener
 
 
 

@@ -1,0 +1,12 @@
+BMP 	(psa)			Eat6(psa)			DSG/powershift (ford)
+ETG 	(psa)							EDC (renault ++)
+sensodrive/2tonic		DCT/TCT				smg M3,m5,m6 ?
+Dacia - Easy-R							DSG/S-tronic +++ (volkswagen/audi/skoda/seat, pb moins de2014)
+Durashift
+dualogic/selespeed
+ASG (volkswagen)		Triptronic (volkswagen)		Multitronic(audi)
+Quickshift (renault)		Multidrive (Toyota)
+X tronic (nissan)
+MMT (toyota)
+x-shift (toyota)
+				
