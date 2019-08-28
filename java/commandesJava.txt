@@ -186,6 +186,19 @@ ${titre}							//getter jstl
 request.getSession().invalidate();
 
 
+				STRINGBUILDER
+StringBuilder builder = new StringBuilder( "<table>\n" );
+        for( int row=0; row<10; row++ ) {
+            builder.append( "\t<tr>\n\t\t" );
+            for( int column=0; column<10; column++ ) {
+                builder.append( "<td>" );
+                builder.append( row * column );
+                builder.append( "</td>" );
+            }
+            builder.append( "\n\t</tr>\n" );
+        }
+        builder.append( "</table>\n" );
+        return builder.toString();
 
 
 

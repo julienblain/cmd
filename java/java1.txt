@@ -2,6 +2,7 @@
 
 Github : https://github.com/webformation/formation-j2E
 Cours autre formateur : http://www.lsis.org/elmouelhia/teaching.html
+mail: dc@webformation.fr
 
 
 library jstl comme twig
@@ -113,6 +114,8 @@ maBoucle: while...	//une etiquette permet de break une etiquette precise
 
 				Les Classes
 Il est préferable d'utiliser un StringBuilder plutot que de faire une concaténation de chaine de caractere
+Si on s'atture le stringBuilder le buffer va s'agrandir mais pas forcement automatiquement
+(si multi thread utiliser stringBuffer)
 
 constructeur autant qu'on veut avec des param differents
 public Personne(String nom, in age)
@@ -183,6 +186,7 @@ Quand on n'instancie pas une classe parent, on cree une classe abstraite
 
 VENDREDI26
 
+pour lire un doc
 le buffer ne se vide pas avec un nextInt() (la touche entrée reste ne memoire donc
 int i = sc.nextInt();
 sc.nextLine()	//permet de vider le buffer
@@ -265,7 +269,7 @@ il vaut mieux utiliser le single thread pour eviter les pb dans les servlets
 				TESTS - junit
 
 				PHPMYADMIN
-DAns ide, service, database, driver, mysql, ajouter les drivers
+Dans ide, service, database, driver, mysql, ajouter les drivers
 
 javaDatabaseConnection
 url jdbc jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=convertToNull&serverTimezone=Europe/Paris
@@ -294,6 +298,112 @@ EntityManager fait la connexion entre la bdd et les entités, qu'on n'apl pas ave
 on fait des requetes sur les entités pas sur les bdd
 permet de passer de sql a nosql par ex...
 une Entity est une classe qui est mappée en bdd
+
+Quand une cree une Entity dataBase ça creer le fichier persistence
+
+jpa :
+	nouveau projet tourne avec tomcat
+	creer une nouvelle entity database
+	ajout id s'il y a pas
+	ajout dependance mysl-connector-java
+	changer dans la persistenceUnit dans le fichier persistence
+
+
+Quand on map avec des clef etranger (quand on fait eager on va creer les 2 classes liées)
+	en lazy (on charge pas l'objet mais c'est quand on en aura besoin)
+
+				LIVRES
+Penser en java
+Tete la premiere (head first) Eyrolle
+site point
+
+				REsumé
+ordre traitment:
+	page jsp
+	couche metier, servlet
+	acces bdd 
+		par jdbc
+		par jpa (qui emploi jdbc mais invisible)
+
+Apir Rest : interrog" par http
+webService: accessible par le resau mais qui va pas forcement faire à http (ce qui va proposer des api)
+Api soap : qui font appel à autre que http
+		
+				WebService
+http://gsvl:8080/helloREST/webresources/generic
+
+format/norme wadl : fichier xml qui decrit l'api rest (c'est le server d'appli qui le cree, pas tous le font)
+Glasfish permet de le creer
+
+On cree un nouveau fichier de catego web service, et de type restfull pattern
+
+pour testet le webservice, clique droit sur le dossier restful
+pour passer des param on prend un container item
+
+jpa = orm
+
+
+				SPRING (2003)
+on va travailler avec des contener légers qui vont avoir en charge la gestion de composants (création, initialisation...)
+on va ecrire des POJO = Plan old java object, classe java simple
+on va faire la config dans xml (param simple, param : autres composants)
+
+IOC =inversion of control
+on va indiquer au controler léger cmt travailler par des notation ou xml, qui fait de l'injection de dépendance
+
+grace a des modules de spring, on va pouvoir encapsuler les 
+
+
+//demoSpringMvc
+Dans sourcePackage on fait notre POJO, 
+on crée le contexte, le contener dans xml avec les param
+et on cree une vue correspondante
+
+le client fait une requete, la requete passe par web.xml grace à l'url(servelet) qui dispatche, et va pouvoir chercher le controller et le xml associé
+NE PAS UTILISER LE SPRING DE NETBEANS SURTOUT LE FORM,
+On copie colle les dépendance d'un autre controller pour que ca à jour
+
+le fichier pomme contient  <groupId>org.springframework</groupId>
+
+Le service est une interface, et c'est le service qu'on utilisera dans le controller et pas la classe cible, pas la classe qui implémente l'interface
+Le service fait le lien entre le controller et l'entity, dans notre controller on pourra appeler des truc sans savoir quels sont les entity
+
+Poour creer un projet spring, on cree une webApp maven avec tomcat
+Puis dans webPage on cree un new file standart deployment Descriptor (xml)
+
+
+
+				DAO data access object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
