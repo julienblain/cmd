@@ -1,0 +1,8 @@
+				JQUERY MOBILE
+https://jquerymobile.com/download/
+https://openclassrooms.com/fr/courses/1567926-un-site-web-dynamique-avec-jquery/1570144-le-framework-mobile-jquery-mobile
+
+//regarder mobile.html
+fonctionne par theme, on peut construire son propre theme avec themeRoller
+
+ajout de l'extension chrome ripple (emulatueur) (ouvrir le fichier dans wamp www)
