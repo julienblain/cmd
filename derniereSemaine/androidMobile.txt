@@ -1,0 +1,9 @@
+				ANDROID MOBILE
+
+Env : Android Studio
+
+Gradel c'est comme maven (compile + dependances)
+
+@ =  va chercher dans fichier de config
+
+Pour mettre du txt qui se repete res/values/string et dans le xml  android:text="@string/app_hello"
