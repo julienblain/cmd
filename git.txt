@@ -3,12 +3,14 @@
 git config --global (ou pas)
 git config user.name "juju"
 git config user.email "blabla@"
-git config --list		//permet de voir si la config c'est bien passé
+git config --list		//permet de voir si la config c'est bien passÃ©
 
 git init
 git status
 git add fichier.html fichier.css
 git add .
+
+git clone http..		//clone depot distan
 
 git rm --cached fichier.css   	//supp indexation
 git reset fichier.css       	// pareil supp indexation
@@ -31,7 +33,7 @@ git tag --delete namegit1	//delete tag name
 
 git remote add origin https://github.com... 	//cree le remote git vers githube
 git remote -v 			// verif remote
-git push -u origin master	// 1er push d'origin à master
+git push -u origin master	// 1er push d'origin Ã  master
 
 git pull			//tire du github au local
 
@@ -45,10 +47,10 @@ git branch -d branchNale	//delete branch
 git branch -a			//donne branch distant
 git push origin --delete branchName	//delete branch depot distant
 
-git rebase branchName			//bouge tout les commit d'une branche à une autre de la branche qu'on veut les commit vers celle qu'on veut mettre les commit
+git rebase branchName			//bouge tout les commit d'une branche Ã  une autre de la branche qu'on veut les commit vers celle qu'on veut mettre les commit
 git merge branchNameAFusionner		//fusionne la branche qu'on veut garder, de la branche qu'on veut garde
-git stash			//mets les modif de coté, go to other branch and save les changements sans besoin de commit
-git stash +indexDuStash		//reedite les stash indexés 0
+git stash			//mets les modif de cotÃ©, go to other branch and save les changements sans besoin de commit
+git stash +indexDuStash		//reedite les stash indexÃ©s 0
 git stash list			//list index stash
 
 git revert +sha1		//fait l'inverse des modif du dernier commit
